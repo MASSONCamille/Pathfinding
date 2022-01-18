@@ -9,6 +9,10 @@ public class ClassicCell extends HexCell {
     public static int defaultViewRange = 5;
     public static boolean defaultWalkability = true;
 
+    public ClassicCell(){
+        super();
+    }
+
     @Override
     public int getEnterCost() {
         return defaultEnterCost;
