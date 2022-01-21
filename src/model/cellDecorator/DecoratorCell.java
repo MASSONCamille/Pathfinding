@@ -19,6 +19,16 @@ public abstract class DecoratorCell extends HexCell {
     }
 
     @Override
+    public int getX() {
+        return wrappee.getX();
+    }
+
+    @Override
+    public int getY() {
+        return wrappee.getY();
+    }
+
+    @Override
     public int getEnterCost() {
         return this.wrappee.getEnterCost() + this.getEnterCostModifier();
     }

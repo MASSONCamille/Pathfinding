@@ -4,6 +4,8 @@ import model.HexCell;
 
 public class ClassicCell extends HexCell {
 
+    private int x, y;
+
     public static int defaultEnterCost = 2;
     public static int defaultExitCost = 2;
     public static int defaultViewRange = 5;
@@ -11,6 +13,24 @@ public class ClassicCell extends HexCell {
 
     public ClassicCell(){
         super();
+        this.x = 0;
+        this.y = 0;
+    }
+
+    public ClassicCell(int x, int y){
+        super();
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public int getX() {
+        return this.x;
+    }
+
+    @Override
+    public int getY() {
+        return this.y;
     }
 
     @Override

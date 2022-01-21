@@ -1,5 +1,8 @@
 package controler;
 
+import model.cellDecorator.CellForest;
+import model.cellDecorator.CellMountain;
+import model.cellDecorator.ClassicCell;
 import model.HexCell;
 import model.cellDecorator.CellFog;
 import model.cellDecorator.CellForest;
